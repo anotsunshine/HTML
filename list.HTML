@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>list of things</title>
+    </head>
+    <body>
+        <h3>Daftar Bahan Makanan</h3>
+        <ul type="square">
+            <li>Nasi</li>
+            <li>Ayam</li>
+            <li>telur</li>
+        </ul>
+        <hr>
+        <h3>Daftar Peralatan</h3>
+        <ul type="circle">
+            <li>Kompor</li>
+            <li>Panci</li>
+            <li>Wajan</li>
+        </ul>
+        <hr>
+        <h3>cara membuat fried chicken</h3>
+        <ol type = "I">
+            <li>Siapkan bahan-bahan</li>
+            <li>Campur bahan-bahan</li>
+            <li>Goreng ayam</li>
+        </ol>
+        <video id="videoPlayer" width="400" controls>
+            <source src="Barasuara - Terbuang Dalam Waktu (Official Lyric Video).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <audio id="audioPlayer" preload="auto">
+            <source src="Barasuara - Terbuang Dalam Waktu (Official Lyric Video).mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+        <script>
+            const video = document.getElementById('videoPlayer');
+            const audio = document.getElementById('audioPlayer');
+
+            video.addEventListener('play', () => {
+                audio.currentTime = video.currentTime;
+                audio.play();
+            });
+
+            video.addEventListener('pause', () => {
+                audio.pause();
+            });
+
+            video.addEventListener('seeked', () => {
+                audio.currentTime = video.currentTime;
+            });
+
+            video.addEventListener('volumechange', () => {
+                audio.volume = video.volume;
+            });
+
+            video.addEventListener('waiting', () => {
+                audio.pause();
+            });
+
+            video.addEventListener('ratechange', () => {
+                audio.playbackRate = video.playbackRate;
+            });
+        </script>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/YwBiQIxgtEI"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+    </body>
+</html>
