@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form pendaftaran SPMB</title>
+    </head>
+    <form>
+        <h1>Form Pendaftaran SPMB</h1>
+        <table>
+            <tr>
+                <td>Nama lengkap</td>
+                <td>:</td>
+                <td><input type="text" name="nama" placeholder="Masukkan nama lengkap"></td>
+            </tr>
+            <tr>
+                <td>NIK</td>
+                <td>:</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>:</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>alamat</td>
+                <td>:</td>
+                <td><input type="text" name="alamat" placeholder="Masukkan alamat"></td>
+            </tr>
+            <tr>
+                <td>tanggal lahir</td>
+                <td>:</td>
+                <td><input type="date" name="tgl_lahir"></td>
+            </tr>
+            <tr>
+                <td>jenis kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jk" value="laki-laki">Laki-laki
+                    <input type="radio" name="jk" value="perempuan">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>mata pelajaran favorit</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="mapel" value="matematika">Matematika
+                    <input type="checkbox" name="mapel" value="bahasa indonesia">Bahasa Indonesia
+                    <input type="checkbox" name="mapel" value="bahasa inggris">Bahasa Inggris
+                    <input type="checkbox" name="mapel" value="ipa">IPA
+                </td>
+            </tr>
+            <tr>
+                <td>pilih jurusan</td>
+                <td>:</td>
+                <td>
+                    <select name="jurusan">
+                        <option value="TKJ">TKJ</option>
+                        <option value="PG">PG</option>
+                        <option value="RPL">RPL</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>upload foto</td>
+                <td>:</td>
+                <td><input type="file" name="foto"></td>
+            </tr>
+        </table>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</html>
